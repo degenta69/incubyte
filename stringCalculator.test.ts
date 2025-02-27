@@ -12,5 +12,10 @@ test("returns the number itself when only one number is provided", () => {
 
 test("returns the sum of two comma-separated numbers", () => {
   expect(add("1,5")).toBe(6);
+  expect(add("1,5,5,2,1")).toBe(14);
+});
+
+test("handles new lines as delimiters along with commas", () => {
+  expect(add("1\n2,3")).toBe(6);
 });
 
