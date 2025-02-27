@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest --config jest.config.js"
+    "test": "jest --config jest.config.js",
+    "start": "npx ts-node stringCalculator.ts"
   },
   "keywords": [],
   "author": "",
