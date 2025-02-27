@@ -19,3 +19,10 @@ test("handles new lines as delimiters along with commas", () => {
   expect(add("1\n2,3")).toBe(6);
 });
 
+test("handles custom delimiters", () => {
+  expect(add("//;\n1;2")).toBe(3)
+  expect(add("//f\n1f2f5f5")).toBe(13)
+});
+
+
+
